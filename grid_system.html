@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Test responsive</title>
     <link rel="stylesheet" href="grid.css">
+    <style>
+
+        .container {
+            background-color: #ccc;
+        }
+        .box {
+            background-color: orange;
+            height: 360px;
+            display: flex;
+            border-radius: 8px;
+            transition: all 0.3s ease 0s;
+            box-shadow: 0 0 16px #ccc;
+        }
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #fff;
+            margin: auto;
+        }
+
+        .box:hover {
+            transform: scaleX(1.05);
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <div class="grid wide container">
+        <div class="row">
+            <div class="col l-3 m-6 c-12">
+                <div class="box">
+                    <h1>NX</h1>
+                </div>
+            </div>
+            <div class="col l-3 m-6 c-12">
+                <div class="box">
+                    <h1>NX</h1>
+                </div>
+            </div>
+            <div class="col l-3 m-6 c-12">
+                <div class="box">
+                    <h1>NX</h1>
+                </div>
+            </div>
+            <div class="col l-3 m-6 c-12">
+                <div class="box">
+                    <h1>NX</h1>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </body>
 </html>
